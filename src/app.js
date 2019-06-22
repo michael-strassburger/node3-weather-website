@@ -51,7 +51,8 @@ app.get('/weather', (req, res)=> {
                         location: location,
                         forecast: 'It is currently ' + weatherdata.temperature + ' degrees out. There is a ' + weatherdata.precipProbability + ' % chance of rain.',
                         temperature: weatherdata.temperature,
-                        address: req.query.address
+                        address: req.query.address,
+                        pressure: weatherdata.pressure
                     })
                 }
                                 
