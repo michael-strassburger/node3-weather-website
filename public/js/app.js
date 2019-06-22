@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
             if (!data.error) {
                 message1.textContent = data.location
                 message2.textContent = data.forecast
-                message3.textContent = 'Current air pressure: ' + data.pressure + ' hpa'
+                message3.textContent = data.pressure
             } else {
                 message1.textContent = data.error
                 message2.textContent = ''
